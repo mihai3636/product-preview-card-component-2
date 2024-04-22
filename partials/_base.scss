@@ -1,3 +1,11 @@
 body {
+  min-height: 100vh;
+  padding: var(--sp-7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--cl-background);
+  font-family: var(--ff-main);
 }

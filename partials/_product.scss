@@ -1,0 +1,82 @@
+@use "./utils" as *;
+
+.product {
+  display: flex;
+  width: toRem(600px);
+  min-width: toRem(600px);
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-img {
+  width: toRem(300px);
+  object-fit: cover;
+  display: block;
+}
+
+.product-info {
+  padding: var(--sp-7);
+  background-color: var(--cl-white);
+  font-size: var(--fs-3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // gap: 30px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: var(--fs-2);
+  font-weight: var(--fw-normal);
+  letter-spacing: 4px;
+  color: var(--cl-main-paragraph);
+}
+
+.title {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-8);
+  line-height: 1;
+}
+
+.text {
+  color: var(--cl-main-paragraph);
+  line-height: 1.6;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-7);
+}
+
+.current-price {
+  font-family: var(--ff-sec);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-8);
+  color: var(--cl-primary);
+}
+
+.old-price {
+  color: var(--cl-main-paragraph);
+}
+
+.btn {
+  border: none;
+  padding: var(--sp-5);
+  cursor: pointer;
+  border-radius: 10px;
+
+  font-size: var(--fs-3);
+  font-weight: var(--fw-bold);
+}
+
+.btn-primary {
+  background-color: var(--cl-primary);
+  color: var(--cl-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--cl-primary-shade);
+}
