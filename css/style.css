@@ -140,4 +140,33 @@ body {
 
 .btn-primary:hover {
   background-color: var(--cl-primary-shade);
+}
+
+.btn-icon {
+  display: inline-block;
+  margin-right: var(--sp-2);
+}
+
+@media (max-width: 37.5rem) {
+  body {
+    padding: var(--sp-5);
+  }
+  .product {
+    width: 21.875rem;
+    min-width: 21.875rem;
+    flex-direction: column;
+  }
+  .product-img {
+    width: 100%;
+  }
+  .product-info {
+    padding: var(--sp-6);
+    gap: var(--sp-5);
+  }
+  .price-box {
+    gap: var(--sp-6);
+  }
+  .btn-icon {
+    margin-right: var(--sp-3);
+  }
 }/*# sourceMappingURL=style.css.map */

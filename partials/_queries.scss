@@ -1,0 +1,30 @@
+@use "utils" as *;
+
+@media (max-width: #{toRem(600px)}) {
+  body {
+    padding: var(--sp-5);
+  }
+
+  .product {
+    width: toRem(350px);
+    min-width: toRem(350px);
+    flex-direction: column;
+  }
+
+  .product-img {
+    width: 100%;
+  }
+
+  .product-info {
+    padding: var(--sp-6);
+    gap: var(--sp-5);
+  }
+
+  .price-box {
+    gap: var(--sp-6);
+  }
+
+  .btn-icon {
+    margin-right: var(--sp-3);
+  }
+}

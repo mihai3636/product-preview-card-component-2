@@ -23,7 +23,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // gap: 30px;
 }
 
 .subtitle {
@@ -79,4 +78,9 @@
 
 .btn-primary:hover {
   background-color: var(--cl-primary-shade);
+}
+
+.btn-icon {
+  display: inline-block;
+  margin-right: var(--sp-2);
 }
